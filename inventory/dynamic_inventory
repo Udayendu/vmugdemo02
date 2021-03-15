@@ -1,0 +1,17 @@
+[winserv]
+<vmname01_xxx.xxx.xxx.xxx>  Mgmt_network_ipv4=''  vsphere_vm_hostname=''
+<vmname02_xxx.xxx.xxx.xxx>  Mgmt_network_ipv4=''  vsphere_vm_hostname=''
+
+
+[gowinserv]
+xxx.xxx.xxx.xxx
+xxx.xxx.xxx.xxx
+
+[gowinserv:vars]
+ansible_connection=winrm
+ansible_user=example\admin
+ansible_password=
+ansible_winrm_transport=credssp
+ansible_winrm_server_cert_validation=ignore
+ansible_port=5986
+
